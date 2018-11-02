@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="72d5d6da0afc431393072eda7103fa31" Name="Diagram1" >
+        <EntityTypeShape EntityType="DB.SysSample" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB.SysModule" Width="1.5" PointX="3.375" PointY="0.75" />
+        <AssociationConnector Association="DB.FK_SysModule_SysModule" />
+        <EntityTypeShape EntityType="DB.SysLog" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DB.SysException" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DB.SysModuleOperate" Width="2" PointX="5.625" PointY="18.75" />
+        <EntityTypeShape EntityType="DB.SysRight" Width="1.5" PointX="7.625" PointY="5.125" />
+        <EntityTypeShape EntityType="DB.SysRightOperate" Width="1.5" PointX="9.875" PointY="5.25" />
+        <EntityTypeShape EntityType="DB.SysRole" Width="1.5" PointX="5.375" PointY="9.5" />
+        <EntityTypeShape EntityType="DB.SysUser" Width="1.5" PointX="7.625" PointY="10" />
+        <AssociationConnector Association="DB.FK_SysModuleOperate_SysModule" />
+        <AssociationConnector Association="DB.FK_SysRight_SysModule" />
+        <AssociationConnector Association="DB.FK_SysRight_SysRole" />
+        <AssociationConnector Association="DB.FK_SysRightOperate_SysRight" />
+        <AssociationConnector Association="DB.SysRoleSysUser" />
+        <EntityTypeShape EntityType="DB.MIS_Article" Width="1.5" PointX="9.875" PointY="12" />
+        <EntityTypeShape EntityType="DB.MIS_Article_Category" Width="1.5" PointX="7.375" PointY="0.75" />
+        <AssociationConnector Association="DB.FK_MIS_Article_SysUser" />
+        <AssociationConnector Association="DB.FK_MIS_Article_SysUser1" />
+        <AssociationConnector Association="DB.FK_MIS_Article_Category_MIS_Article_Category" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

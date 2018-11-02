@@ -1,0 +1,11 @@
+Apps.BLL  业务逻辑层
+Apps.DAL  数据访问层
+Apps.IBLL 业务层接口
+Apps.IBAL 数据访问层接口
+Apps.Common 通用类
+Apps.Core 注入相关文件
+Apps.Jobs Quartz任务调度（定时执行SQL语句）
+Apps.Locale 国际化资源文件（中英）
+Apps.Models Model层
+Apps.Web Web展示层
+Apps.WebApi Resetful服务接口
